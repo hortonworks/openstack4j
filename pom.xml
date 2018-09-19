@@ -8,7 +8,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.pacesys</groupId>
     <artifactId>openstack4j-parent</artifactId>
-    <version>3.1.1-SNAPSHOT</version>
+    <version>3.1.0-jersey26_v3fix</version>
     <name>OpenStack4j Parent</name>
     <description>OpenStack Java API</description>
     <url>http://github.com/ContainX/openstack4j/</url>
@@ -91,6 +91,13 @@
 
     <build>
         <finalName>openstack4j</finalName>
+        <extensions>
+            <extension>
+                <groupId>org.kuali.maven.wagons</groupId>
+                <artifactId>maven-s3-wagon</artifactId>
+                <version>1.2.1</version>
+            </extension>
+        </extensions>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -339,5 +346,13 @@
             </build>
         </profile>
     </profiles>
+
+    <distributionManagement>
+        <repository>
+            <id>cloudbreak.repo</id>
+            <name>Cloudbreak Repository</name>
+            <url>s3://cloudbreak-maven/releases</url>
+        </repository>
+    </distributionManagement>
 
 </project>
