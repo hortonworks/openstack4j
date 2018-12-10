@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.pacesys</groupId>
 		<artifactId>openstack4j-core-integration-test</artifactId>
-		<version>3.1.0-jersey26_v3fix</version>
+		<version>3.1.0-jersey26_v4fix</version>
 	</parent>
 	<artifactId>it-httpclient</artifactId>
 	<name>OpenStack4j IntegrationTest Apache HttpClient</name>
