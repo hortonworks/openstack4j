@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.pacesys</groupId>
 		<artifactId>openstack4j-core-integration-test</artifactId>
-		<version>3.1.0-jersey26_v4fix</version>
+		<version>3.2.0-jersey26_v5fix</version>
 	</parent>
 	<artifactId>it-resteasy</artifactId>
 	<name>OpenStack4j IntegrationTest RestEasy Connector</name>

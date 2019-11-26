@@ -1,7 +1,6 @@
 package org.openstack4j.api.types;
 
 import java.util.regex.Pattern;
-
 public enum ServiceType {
 
 	IDENTITY("keystone", "identity"),
